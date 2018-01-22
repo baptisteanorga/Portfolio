@@ -10,7 +10,7 @@ const $arrow_down = document.querySelector('.arrow_down')
 
 const $work = document.querySelector('.work')
 const $works_description = Array.from($work.querySelectorAll('.works_description'))
-const $div_img = Array.from($work.querySelectorAll('.img'))
+const $div_img = Array.from($work.querySelectorAll('.img a'))
 
 $discover_link.addEventListener('mouseover',()=>
 {
