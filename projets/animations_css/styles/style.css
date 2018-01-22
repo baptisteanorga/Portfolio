@@ -1,0 +1,355 @@
+.tittle
+{
+    width:450px;
+    margin:30px auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+}
+
+.main
+{
+    position: relative;
+    width:900px;
+    height: 600px;
+    margin:10px auto;  
+    overflow: hidden; 
+}
+
+.button
+{
+    width: 150px;
+    margin:0 auto;
+    border : 1px solid;
+    border-radius:20px;
+    text-align:center;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+.button>a
+{
+    text-decoration: none;
+}
+
+/**LOCALISATION IMG AND ANIMATION**/
+img.gearbox_extern
+{
+    position: absolute;
+    width:720px;
+    top:40px;
+}
+.active
+{
+    visibility: hidden;
+}
+
+
+img.gearbox
+{
+    position: absolute;
+    width:720px;
+    top:40px; 
+}
+
+img.gear_1
+{
+    position: absolute;
+    width:100px;
+    left: 162px;
+    top: 308px;
+    animation:gear_1_rotation 4.5s infinite cubic-bezier(1, 0.02, 0.65, 0.8);
+}
+
+@keyframes gear_1_rotation
+{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(-360deg);}
+}
+
+img.gear_2
+{
+    position: absolute;
+    width: 140px;
+    left: 118px;
+    top: 203px;
+    animation:gear_2_rotation 4.5s infinite cubic-bezier(1, 0.02, 0.65, 0.8);
+}
+
+@keyframes gear_2_rotation
+{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+img.gear_3
+{
+    position: absolute;
+    width: 142px;
+    left: 218px;
+    top: 180px;
+    animation:gear_3_rotation 4.5s infinite cubic-bezier(1, 0.02, 0.65, 0.8);
+}
+
+@keyframes gear_3_rotation
+{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(-360deg);}
+}
+
+img.trigger
+{
+    position: absolute;
+    top: 264px;
+    left: 320px;
+    width: 82px;
+    animation:trigger_rotate 4.5s infinite cubic-bezier(0.64, 0.3, 1, 0.11);
+    transform-origin: 63% 42%;
+}
+
+@keyframes trigger_rotate
+{
+    0%{transform:rotate(0deg);}
+    30%{transform:rotate(30deg);}
+    70%{transform:rotate(0deg);}
+}
+
+img.tappet_plate
+{
+    position: absolute;
+    top: 117px;
+    left: 229px;
+    width: 535px;
+    animation: tappet_plate_X 4.5s infinite linear;
+    
+}
+@keyframes tappet_plate_X
+{
+    0%{transform:translateX(0);}
+    40%{transform:translateX(0);}
+    70%{transform:translateX(-32px);}
+    80%{transform:translateX(0);}
+
+}
+
+img.spring
+{
+    position: absolute;
+    top: 210px;
+    left: 508px;
+    width: 119px;
+    animation:spring_stretch 4.5s infinite linear;
+    transform-origin:97% 50%;
+}
+
+@keyframes spring_stretch 
+{
+    40%{transform: scaleX(1);}
+    45%{transform: scaleX(1.05);}
+    70%{transform: scaleX(1.25);}
+    80%{transform: scaleX(1.0);}    
+}
+
+img.cylinder
+{
+    position: absolute;
+    top: 86px;
+    left: 357px;
+    width: 341px;
+}
+
+img.piston
+{
+    position: absolute;
+    top: 95px;
+    left: 272px;
+    width: 341px;
+    animation:piston_translateX 4.5s infinite cubic-bezier(1, 0.02, 0.65, 0.8);
+    animation-delay:0.2s;
+}
+
+@keyframes piston_translateX
+{
+    50%{transform:translateX(0px);}
+    80%{transform:translateX(-200px);}
+    82%{transform:translateX(0px);}
+    
+}
+
+img.main_spring
+{
+    position: absolute;
+    top: 113px;
+    left: 34px;
+    width: 271px;
+    animation:main_scale 4.5s infinite cubic-bezier(1, 0.02, 0.65, 0.8);
+    transform-origin: 0% 50%;
+    animation-delay:0.2s;
+}
+@keyframes main_scale
+{
+    50%{transform: scaleX(1);} 
+    80%{transform: scaleX(0.7);}
+    82%{transform: scaleX(1);}    
+}
+
+img.spring_guide
+{
+    position: absolute;
+    top: 113px;
+    left: 10px;
+    width: 139px;
+}
+
+img.bloc
+{
+    position: absolute;
+    top: 150px;
+    left: 714px;
+    width: 100px;
+}
+
+img.switch_1
+{
+    position: absolute;
+    top: 216px;
+    left: 353px;
+    width: 75px;
+    animation:switch_translate 4.5s infinite cubic-bezier(0.64, 0.3, 1, 0.11);
+}
+@keyframes switch_translate
+{
+    0%{transform:translateX(0);}
+    30%{transform:translateX(15px);}
+    70%{transform:translateX(0);}
+}
+
+img.switch_2
+{
+    position: absolute;
+    top: 237px;
+    left: 353px;
+    width: 102px;
+}
+
+img.spring_switch
+{
+    position: absolute;
+    top: 211px;
+    left: 345px;
+    width: 79px;
+    animation: spring_switch_scale 4.5s infinite cubic-bezier(0.64, 0.3, 1, 0.11) ;
+    transform-origin: 0% 50%;
+}
+@keyframes spring_switch_scale
+{
+    0%{transform: scaleX(1);} 
+    30%{transform: scaleX(1.22);}
+    70%{transform: scaleX(1);} 
+}
+
+/**BULLET SHOT**/
+.bullet
+{   
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ababab;
+    top: 155px;
+    left: 751px;
+    animation: bullet_shot 4.5s infinite ease-in-out;
+    animation-delay: 2s
+}
+
+@keyframes bullet_shot
+{
+    0%{transform:translate3d(0,0,0);}
+    28%{transform:translate3d(0,-50px,0);}
+    39%{transform:translate3d(16px,-50px,0);}
+    41%{transform:translate3d(16px,-50px,0);}
+    100%{transform:translate3d(200000px,-50px,0);}
+}
+
+
+/** VIS **/
+
+
+.screw
+{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #424242;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color:#C4C4C4;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  z-index:1;
+}
+
+.screw.rotate
+{
+    animation: rotate_scale 4.5s linear;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes rotate_scale
+{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.5) rotate(180deg);}
+    100%{transform:scale(2) rotate(0deg);opacity: 0;}
+}
+
+/**LOCALISATION SCREW**/
+.screw-1
+{
+    top:58px;
+    left: 95px;
+}
+
+.screw-2
+{
+    top:58px;
+    left: 285px;
+}
+
+.screw-3
+{
+    top:55px;
+    left: 476px;
+}
+
+.screw-4
+{
+    top:55px;
+    left: 664px;
+}
+
+.screw-5
+{
+    top:217px;
+    left: 18px;
+}
+
+.screw-6
+{
+    top:421px;
+    left: 209px;
+}
+
+.screw-7
+{
+    top:240px;
+    left: 463px;
+}
+
+.screw-8
+{
+    top:190px;
+    left: 695px;
+}
