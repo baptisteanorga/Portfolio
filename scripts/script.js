@@ -1,6 +1,8 @@
 // CALL CursorParallax Function
 const cursorParallax = new CursorParallax()
 
+// Set Variables
+
 const $fill_line = document.querySelector('.fill_line')
 const $discover_link=document.querySelector('.discover_link')
 
@@ -13,8 +15,7 @@ const $works_description = Array.from($work.querySelectorAll('.works_description
 const $div_img = Array.from($work.querySelectorAll('.img a'))
 
 $discover_link.addEventListener('mouseover',()=>
-{
-   
+{   
     $fill_line.style.transform=`scaleX(${1.6})`
     $fill_line.classList.remove('animate')
 
