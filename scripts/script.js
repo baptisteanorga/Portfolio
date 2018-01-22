@@ -6,13 +6,14 @@ const cursorParallax = new CursorParallax()
 const $fill_line = document.querySelector('.fill_line')
 const $discover_link=document.querySelector('.discover_link')
 
-const $scroll = document.querySelector('.scroll_container')
-const $arrow_down = document.querySelector('.arrow_down')
-
-
 const $work = document.querySelector('.work')
 const $works_description = Array.from($work.querySelectorAll('.works_description'))
 const $div_img = Array.from($work.querySelectorAll('.img a'))
+
+const $arrow_down = document.querySelector('.arrow_down')
+
+
+// Underline
 
 $discover_link.addEventListener('mouseover',()=>
 {   
@@ -27,34 +28,41 @@ $discover_link.addEventListener('mouseover',()=>
     
 })
 
-
+// Description works
 for (let i=0; i<$div_img.length;i++)
 {
     $div_img[i].addEventListener('mouseover',()=>
     {    
         $works_description[i].style.visibility='visible'
+        $works_description[i].style.opacity='1'
         console.log('là')
     })
     $div_img[i].addEventListener('mouseleave',()=>
     {
         $works_description[i].style.visibility='hidden'
+        $works_description[i].style.opacity='0'
     })
 }
 
+// Scroll
 
 window.addEventListener('scroll',(event)=>
 {
-    if(window.pageYOffset==0)
-    {
-        $scroll.style.opacity="1"
-    }
-    else if(window.pageYOffset>=window.scrollMaxY-5)
+ if(window.pageYOffset>=window.scrollMaxY-5)
     {
         $arrow_down.style.opacity="0"
     }
     else
     {
-        $scroll.style.opacity="0"
         $arrow_down.style.opacity="1"
     }
+    console.log(pageYOffset)
 })
+
+// scroll to
+
+$arrow_down.addEventListener('click',()=>
+    {
+        scrollTo(0,737)
+    }
+)
