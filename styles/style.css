@@ -15,6 +15,7 @@ svg
 {
     height: 30px;
     width: 30px;
+    fill: #dfdfdf;
 }
 
 svg:hover
@@ -179,6 +180,7 @@ section.work h2
     text-align: center;
     font-size: 6vh;
     margin-top: 10px;
+    color:#dfdfdf;
 
 }
 
@@ -195,32 +197,33 @@ section.work .works
 section.work .works .img a img
 {
     margin-top:30px;
-    width: 25%;
-    border-radius: 20px;
+    width: 30vw;
+    height: 20vw;
+    border-radius: 5%;
     box-shadow: 3px 10px 60px -29px rgba(0,0,0,0.75);
 }
 
-
 section.work .works h3
 {
-    font-size: 4vh;
+    font-size: 2vw;
     text-decoration: underline;
     margin-top:10px;
     margin-bottom: 40px;
     text-align: center;
+    color:#dfdfdf;
 }
 
 section.work .works .works_description
 {
     position: absolute;
     background: #ffffff28;
-    width: 400px;
+    width: 30vw;
     visibility: hidden;
-    left:20px;
-    top:30%;
+    left:4vw;
+    top:10vw;
     font-family: 'Roboto', sans-serif;
     border-radius:10px;
-    color:rgb(226, 226, 226);
+    color:#dfdfdf;
     font-size:15px;
     line-height: 17px;
     z-index: 4;
@@ -231,6 +234,25 @@ section.work .works .works_description
 
 section.work .works .works_description>p
 {
-    width: 350px;
+    width: 25vw;
     margin : 0 auto;
+}
+
+section.work .works .skills
+{
+    position: absolute;
+    visibility: hidden;
+    right:30vw;
+    top:13%;
+    z-index:4;
+    transform:opacity;
+    transition-duration:0.4s;
+    will-change:opacity;
+}
+
+section.work .works .skills img
+{
+    width: 5vw;
+    display: block;
+    margin-top: 10px;
 }

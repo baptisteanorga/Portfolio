@@ -9,6 +9,7 @@ const $discover_link=document.querySelector('.discover_link')
 const $work = document.querySelector('.work')
 const $works_description = Array.from($work.querySelectorAll('.works_description'))
 const $div_img = Array.from($work.querySelectorAll('.img a'))
+const $skills = Array.from($work.querySelectorAll('.skills'))
 
 const $arrow_down = document.querySelector('.arrow_down')
 
@@ -35,12 +36,19 @@ for (let i=0; i<$div_img.length;i++)
     {    
         $works_description[i].style.visibility='visible'
         $works_description[i].style.opacity='1'
-        console.log('là')
+
+        $skills[i].style.visibility='visible'
+        $skills[i].style.opacity='1'
+        
     })
     $div_img[i].addEventListener('mouseleave',()=>
     {
         $works_description[i].style.visibility='hidden'
         $works_description[i].style.opacity='0'
+
+        $skills[i].style.visibility='hidden'
+        $skills[i].style.opacity='0'
+        
     })
 }
 
@@ -55,14 +63,16 @@ window.addEventListener('scroll',(event)=>
     else
     {
         $arrow_down.style.opacity="1"
-    }
-    console.log(pageYOffset)
+        
 })
 
 // scroll to
 
 $arrow_down.addEventListener('click',()=>
     {
-        scrollTo(0,737)
+        window.scroll({
+            top: 730,
+            behavior: "smooth"
+          });
     }
 )
