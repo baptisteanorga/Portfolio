@@ -31,8 +31,8 @@ li
 nav.header_navigation
 {
     position: fixed;
-    top:60px;
-    right:60px;
+    top:8vw;
+    right:8vw;
     height: 160px;
     width: 60px;
     background : #00000025;

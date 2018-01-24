@@ -63,16 +63,16 @@ window.addEventListener('scroll',(event)=>
     else
     {
         $arrow_down.style.opacity="1"
-        
+    }
 })
+
 
 // scroll to
 
 $arrow_down.addEventListener('click',()=>
+{        
+    $work.scrollIntoView(
     {
-        window.scroll({
-            top: 730,
-            behavior: "smooth"
-          });
-    }
-)
+        behavior: "smooth"
+    });
+});
