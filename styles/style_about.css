@@ -1,0 +1,72 @@
+body
+{
+    background: linear-gradient(to right, #2b5876,#4e4376)fixed;
+}
+
+
+/* Header */
+
+.header_logo img
+{
+    position: absolute;
+    top:60px;
+    left:60px;
+}
+
+svg
+{
+    height: 30px;
+    width: 30px;
+    fill: #dfdfdf;
+}
+
+svg:hover
+{
+    fill:rgb(230, 138, 0);
+}
+
+li
+{
+    margin:15px 0 0 15px;
+}
+
+nav.header_navigation
+{
+    position: fixed;
+    top:8vw;
+    right:8vw;
+    height: 160px;
+    width: 60px;
+    background : #00000025;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.header_navigation>ul li
+{
+    display: inline-block;
+}
+
+/* CONTAINER BIO */
+.container_bio
+{
+    position:absolute;
+    margin-left:5vw;
+    margin-top:10vw;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+}
+
+.container_bio .img_bio
+{
+    position: absolute;
+    margin-left: 2vw;
+    margin-top:1vw
+}
+
+.container_bio .bio
+{
+    position: absolute;
+    margin-left:10vw;
+    margin-top:1vw;
+}
