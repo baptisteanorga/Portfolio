@@ -140,30 +140,6 @@ nav.header_navigation
     0%{transform:translateY(0)}
     100%{transform:translateY(10px)}
 }
-/* Scroll to discover */
-
-.scroll_container
-{
-    position: absolute;
-    bottom:20vw;
-    right:21vw;
-    width:100px;
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    font-size:20px;
-    color:#000000;
-    transition-duration: 0.5s;
-}
-
-.scroll_container div
-{
-    position: absolute;
-    right:6.5vh;
-    height: 290px;
-    width: 1px;
-    background: #000000;
-}
-
 
 /* Works */
 section.work
