@@ -6,11 +6,15 @@ body
 
 /* Header */
 
-.header_logo img
+.header_logo
 {
     position: absolute;
     top:60px;
     left:60px;
+    font-family: 'Oswald', sans-serif;
+    color:#dfdfdf;
+    font-size: 20px;
+    letter-spacing:-2px;
 }
 
 svg
@@ -67,6 +71,21 @@ nav.header_navigation
 .container_bio .bio
 {
     position: absolute;
-    margin-left:10vw;
+    margin-left:30vw;
     margin-top:1vw;
+    width: 40%;
+    
+}
+
+.container_bio .bio h1
+{
+    color:rgb(230, 138, 0);
+    font-size:40px;
+}
+
+.container_bio .bio p
+{
+    color:#dfdfdf;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
 }

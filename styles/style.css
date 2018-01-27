@@ -4,12 +4,22 @@ body
 }
 /* Header  */
 
-.header_logo img
+.header_logo
 {
     position: absolute;
     top:60px;
     left:60px;
+    font-family: 'Oswald', sans-serif;
+    color:#dfdfdf;
+    font-size: 20px;
+    letter-spacing:-1.5px;
 }
+
+.header_logo:hover
+{
+    color:rgb(230,138,0);
+}
+
 
 svg
 {
