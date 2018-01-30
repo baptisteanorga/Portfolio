@@ -73,7 +73,7 @@ nav.header_navigation
     position: absolute;
     margin-left:30vw;
     margin-top:1vw;
-    width: 40%;
+    width: 50%;
     
 }
 
@@ -81,6 +81,7 @@ nav.header_navigation
 {
     color:rgb(230, 138, 0);
     font-size:40px;
+    margin-bottom: 10px;
 }
 
 .container_bio .bio p
@@ -88,4 +89,5 @@ nav.header_navigation
     color:#dfdfdf;
     font-size:15px;
     font-family: 'Roboto', sans-serif;
+    margin-bottom:5px;
 }
