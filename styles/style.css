@@ -229,7 +229,7 @@ section.work .works .skills
     position: absolute;
     visibility: hidden;
     right:30vw;
-    top:8vw;
+    top:5vw;
     z-index:4;
     transform:opacity;
     transition-duration:0.6s;
